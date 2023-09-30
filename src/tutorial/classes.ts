@@ -108,10 +108,12 @@ class Bands {
     this.bandsState = [];
   }
 
+  // Getter
   public get bands(): string[] {
     return this.bandsState;
   }
 
+  // Setter
   public set bands(data: string[]) {
     if (
       Array.isArray(data) &&
@@ -125,8 +127,8 @@ class Bands {
 }
 
 const myBands = new Bands();
-console.log(myBands.bands);
-myBands.bands = ['AC/DC', 'Leidseplein', 'Kyo'];
+console.log(myBands.bands); //! using the getter
+myBands.bands = ['AC/DC', 'Leidseplein', 'Kyo']; //! using the setter
 console.log(myBands.bands);
 myBands.bands = [...myBands.bands, 'Boston'];
 // myBands.bands = 'Boston';
