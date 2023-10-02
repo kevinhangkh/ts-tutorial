@@ -133,3 +133,14 @@ console.log(myBands.bands);
 myBands.bands = [...myBands.bands, 'Boston'];
 // myBands.bands = 'Boston';
 console.log(myBands.bands);
+
+class Circle {
+  private static readonly _pi: number = 3.14;
+  static get pi(): number {
+    return Circle._pi;
+  }
+}
+
+console.log(Circle.pi);
+// Circle.pi = 2;
+console.log(Circle.pi);
