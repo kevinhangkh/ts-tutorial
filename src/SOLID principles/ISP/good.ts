@@ -21,7 +21,7 @@ class DeLorean2 implements LandVehicle, AirVehicle {
 
 class F35 implements AirVehicle {
   fly(): void {
-    // Fly A10
+    // Fly
   }
 }
 
